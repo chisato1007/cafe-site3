@@ -1,0 +1,427 @@
+body {
+  margin: 0;
+  background: #faf2e9;
+  color: #000;
+}
+
+.zen-kurenaido-regular {
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 30px;
+  background: #faf2e9;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img{
+  width: 120px;
+  height: auto;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* メイン */
+.hero {
+  height: 400px;
+  position: relative;
+  background: url("images/hero.jpg") center/cover no-repeat;
+}
+
+.overlay {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(243, 238, 238, 0.3);
+}
+
+.hero h1 {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  font-size: 30px;
+  line-height: 1.8;
+}
+
+/* ボタン */
+.btn {
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid #aaa;
+  margin: 20px auto;
+  width: 200px;
+  background: #faf2e9;
+  font-size: 25px;
+}
+
+/* コンセプト */
+.concept-title {
+  position: relative;
+  background:linear-gradient(rgba(160, 159, 159, 0.522), rgba(178, 170, 170, 0.556)), url("images/concept.jpg") center/cover no-repeat;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  padding-left: 100px; 
+  padding: 80px;
+}
+
+.concept img{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(243, 238, 238, 0.3);
+}
+
+.concept {
+  
+  position: relative; 
+  padding: 80px 20px;
+  text-align: center;
+  font-size: 30px
+}
+
+/* セクションタイトル */
+.section-title {
+  position: relative;
+  background:linear-gradient(rgba(240, 236, 236, 0.522), rgba(178, 170, 170, 0.556)), url("images/drip.jpg") center/cover no-repeat;
+  color: #000;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  padding-left: 100px; 
+  padding: 80px;
+}
+
+/* カード */
+.cards {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  flex: 1;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+/* ターゲット */
+.about-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #faf2e9;
+}
+.about {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.target-inner{
+  position: relative;
+  background:linear-gradient(rgba(221, 217, 217, 0.522), rgba(235, 234, 234, 0.556)), url("images/haikei.jpeg") center/cover no-repeat;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  padding-left: 100px; 
+  padding: 100px;
+}
+
+.text {
+  width: 50%;
+  padding-left: 80px;
+}
+
+.image {
+  width: 30%;
+  display: block;
+}
+
+/* メッセージ */
+.message {
+  background: #faf2e9;
+  padding: 85px;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* メニュー */
+.menu-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.menu-title {
+  margin-bottom: 40px;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+}
+
+/* 全体BOX */
+.menu-box {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #edc7aa;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 左カラム */
+.menu-columns {
+  display: flex;
+  gap: 60px;
+  text-align: left;
+}
+
+.menu-col h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.menu-col ul {
+  padding: 0;
+  list-style: none;
+}
+
+.menu-col li {
+  padding: 6px 0;
+  position: relative;
+  padding-left: 15px;
+}
+
+/* 点（・）を綺麗に */
+.menu-col li::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+}
+
+/* 右ボタン */
+.menu-btn a {
+  display: inline-block;
+  background: #edc7aa;
+  padding: 20px 40px;
+  text-decoration: none;
+  color: #6b3fa0;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+/* ホバーでおしゃれ */
+.menu-btn a:hover {
+  background: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+/* メニュー2カラム */
+.menu-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px auto;
+  max-width: 1000px;
+}
+
+.menu-text {
+  width: 50%;
+}
+
+.menu-text h2 {
+  margin-bottom: 20px;
+}
+
+.menu-text li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+/* フッター */
+footer {
+  background: #edc7aa;
+  text-align: left;
+  padding: 30px;
+  color: #000;
+  align-items: center;
+  justify-content: flex-start; 
+  padding-left: 700px;
+}
+
+.footer-box {
+  background: #edc7aa;
+}
+
+/* スマホ */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .target {
+    flex-direction: column;
+  }
+
+  .target img {
+    width: 100%;
+  }
+
+  .menu-box {
+    flex-direction: column;
+  }
+}
+
+/* 共通タイトル帯 */
+.page-hero {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-hero h1 {
+  font-size: 36px;
+  background: rgba(255, 255, 255, 0.352);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 300px;
+
+}
+
+/* 重なり画像 */
+.image-stack {
+  position: relative;
+  width: 320px;
+}
+
+.image-stack img.main {
+  width: 100%;
+  display: block;
+}
+
+.image-stack img.sub {
+  position: absolute;
+  width: 100%;
+  bottom: -100px;
+  left: 100px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+
+/* 逆配置 */
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* フォーム */
+form {
+  max-width: 600px;
+  margin: auto; 
+}
+
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  background: #edc7aa;
+}
+
+button {
+  background: #edc7aa;
+  border: none;
+  padding: 15px 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer; 
+  text-align: center;
+}
+
+
+/* お問い合わせ */
+.contact h2{
+  text-align: center;
+  padding: 10px 30px;
+}
+
+/*会社概要*/
+.company-title {
+  background: url("images/about-bg.jpg") center/cover no-repeat;
+  padding: 60px;
+  font-size: 50px;
+}
+
+.company {
+  height: 500px;
+  position: relative; 
+  padding: 1px 10px;
+  text-align: center;
+  font-size: 30px
+}
+
+.info h2 {
+  align-items: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.info ul{
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+.info li{
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.info span{
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+}
+
+.map{
+  text-align: center;
+}
+
+.map img{
+  width: 80%;
+  max-width: 600px;
+}
