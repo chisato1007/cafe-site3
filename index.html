@@ -2,25 +2,37 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<meta name="viewpoint"content="width=device-width,initial-scale=1.0">
 <title>灯りと珈琲</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zen+Kurenaido&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+<!-- ヘッダー　-->
+<header class="header">
+  <div class="header-inner">
 
-<header>
-  <div class="logo">
-      <img src="images/logo.jpg">
+   <div class="logo">
+     <a href="index.html">
+       <img src="images/logo.jpg" alt="灯りと珈琲">
+     </a>  
+   </div>
+  
 
+   <!-- ハンバーガー　-->
+   <div class="hamburger" id="hamburger">
+     <span></span>
+     <span></span>
+     <span></span>
+   </div>
+
+   <!-- ナビ　-->
+   <nav class="nav"id="nav">
+     <a href="menu.html">メニュー</a>
+     <a href="about.html">会社概要</a>
+     <a href="contact.html">お問い合わせ</a>
+   </nav>
   </div>
-  <nav>
-    <a href="menu.html">メニュー</a>
-    <a href="about.html">会社概要</a>
-    <a href="contact.html">お問い合わせ</a>
-  </nav>
 </header>
 
 <!-- メインビジュアル -->
@@ -38,9 +50,12 @@
 </div>
 
 <!-- コンセプト -->
-<section class="concept">
-  <div class="concept-title">コンセプト</div>
-    <p>
+<section class="page-hero" style="background-image:url('images/concept.jpg')">
+  <h1>コンセプト</h1>
+</section>
+
+<section class="concept-section">
+   <p><br>
      灯りの中で、<br>
      心がほどける時間を。<br><br>
 
@@ -48,19 +63,22 @@
      ふっと肩の力が抜ける場所。<br><br>
 
      一杯の珈琲とともに、<br>
-     あなたに「一息」を。
-    </p>
+     あなたに「一息」を。<br><br>
+   </p>
+  </div>
 </section>
 
 <!-- こだわり -->
-<section class="commit">
-  <div class="section-title">当店のこだわり</div>
+<section class="page-hero" style="background-image:url('images/section-title.jpg')">
+  <h1>当店のこだわり</h1>
+</section>
 
   <div class="cards">
     <div class="card">
       <img src="images/beans.jpg">
       <h2>自家焙煎しています！</h2>
-      <p>常時4〜５種類の珈琲豆をご用意しております。</p>
+      <p class="concept-text">
+        常時4〜５種類の珈琲豆をご用意しております。</p>
     </div>
     <div class="card">
       <img src="images/cake.jpg">
@@ -76,7 +94,7 @@
       <p>
         いつ来ても静かで落ち着いた時間を<br>
         過ごしていただききたいと思い、<br>
-        空間づくりにもこだわりました。
+        空間づくりにもこだわりました。<br>
       </p>
     </div>
   </div>
@@ -87,6 +105,7 @@
   <div class="target-inner">
     <div class="text">
       <h2>こんな方に</h2>
+
         <p>✔ ひとりの時間を大切にしたい</p>
         <p>✔ 落ち着いた空間が好き</p>
         <p>✔ 珈琲が好き</p>
@@ -104,50 +123,50 @@
   <h2>選ぶ”楽しさ”と、過ごす”豊かさ”</h2><br>
   
   <p>
-    産地にこだわった珈琲豆。<br>
-    季節で変わる焼き菓子たち。<br>
-    静かに時間が流れる空間。<br><br>
-    さぁ、一息つきませんか？
+    産地にこだわった珈琲豆。<br><br>
+    季節で変わる焼き菓子たち。<br><br>
+    静かに時間が流れる空間。<br><br><br>
+    さぁ、一息つきませんか？<br>
   </p>
 </section>
 
 <!-- メニュー -->
-<section class="menu-section">
-  <h2 class="menu-title">メニュー</h2>
-  <div class="menu-box">
-    <div class="menu-colmns">
+<section class="menu-box">
+  <h2>メニュー</h2>
 
-     <div class="menu-col">
+  <div class="menu-content">
+     <div>
        <h3>珈琲</h3>
        <ul>
          <li>オリジナルブレンド</li>
          <li>シングルオリジン</li>
-         <li>カフェオレ</li>
+         <li>カフェラテ</li>
+         <p>　　　　　・・・他</p>
        </ul>
      </div>
 
-     <div class="menu-col">
+     <div>
        <h3>ペストリー</h3>
        <ul>
          <li>パン</li>
          <li>焼き菓子</li>
          <li>季節のお菓子</li>
+         <p>　　　・・・他</p>
        </ul>
      </div>
-    </div>
+   </div>
 
     <div class="menu-btn">
       <a href="menu.html">詳しく見る</a>
     </div>
-   </div>
  </div>
-</section>
+</section><br><br>
 
 <footer>
   <p>プライバシーポリシー</p>
   <p>Cookieポリシー</p>
   <p>利用規約</p>
-  <p>Copyright © Akari To Coffee Co., Ltd.All rights reserved</p>
+  <p>&copy; Akari To Coffee Co., Ltd.All rights reserved</p>
 </footer>
 
 </body>
