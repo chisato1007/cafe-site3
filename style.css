@@ -81,6 +81,12 @@ body {
   position: relative;
   background: url("images/hero.jpg") center/cover no-repeat;
 }
+.img {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	object-position: top;
+}
 .overlay {
   height: 100%;
   display: flex;
